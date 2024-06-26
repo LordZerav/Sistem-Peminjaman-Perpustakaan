@@ -63,6 +63,7 @@ int main () {
             cin.ignore();
             getline(cin, dataBuku[a].idBuku);
             cout << "Masukkan Judul Buku Baru\t : \n";
+            cin >> dataBuku[a].judulBuku;
             cin.ignore();
             getline(cin, dataBuku[a].judulBuku);
             cout << "Masukkan Nama Pengarang Buku\t : \n";
@@ -71,33 +72,8 @@ int main () {
             cin >> dataBuku[a].tahunTerbit;
             cout << "Masukkan Stok Buku\t \n";
             cin >> dataBuku[a].stokBuku; 
-        }       
+
+        }
+        
     }
 }
-
-//   
-            
-//         case 2 : {
-
-//         }
-//         case 3 : {
-
-//         }
-//         case 4 : {
-
-//         }
-//         case 5 : {
-
-//         }
-//         case 6 : {
-
-//         }
-//         case 7 : {
-
-//         }
-//     }
-
-    
-//     return 0;
-
-// }
