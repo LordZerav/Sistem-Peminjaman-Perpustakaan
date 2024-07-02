@@ -100,7 +100,7 @@ public:
         string judul;
         cout << "\n";
         cout << "Masukkan Judul Buku yang Dicari: ";
-        cin >> judul;
+        cin.ignore();
         cout << "\n";
         getline(cin, judul);
 
@@ -123,7 +123,7 @@ public:
         string judul;
         cout << "\n";
         cout << "Masukkan Judul Buku yang Ingin Diedit: ";
-        cin >> judul;
+        cin.ignore();
         getline(cin, judul);
 
         for (auto &buku : bukuList) {
@@ -143,7 +143,7 @@ public:
         string judul;
         cout << "\n";
         cout << "Masukkan Judul Buku yang Ingin Dipinjam: ";
-        cin >> ws;
+        cin.ignore();
         getline(cin, judul);
 
         for (auto &buku : bukuList) {
@@ -161,7 +161,7 @@ public:
         string judul;
         cout << "\n";
         cout << "Masukkan Judul Buku yang Ingin Dikembalikan: ";
-        cin >> ws;
+        cin.ignore();
         getline(cin, judul);
 
         for (auto &buku : bukuList) {
@@ -221,31 +221,50 @@ int main() {
         int n;
         cin >> n;
 
-        switch (n) {
-            case 1:
-                perpustakaan.tambahBuku();
-                break;
-            case 2:
-                perpustakaan.cariBuku();
-                break;
-            case 3:
-                perpustakaan.editBuku();
-                break;
-            case 4:
-                perpustakaan.pinjamBuku();
-                break;
-            case 5:
-                perpustakaan.kembalikanBuku();
-                break;
-            case 6:
-                perpustakaan.tampilkanBuku();
-                break;
-            case 7:
-                perpustakaan.keluar();
-                return 0;
-            default:
-                cout << "Pilihan Anda tidak valid, Silakan coba lagi.\n";
+        if (n == 1) {
+            perpustakaan.tambahBuku();
+        } else if (n == 2) {
+            perpustakaan.cariBuku();
+        } else if (n == 3) {
+            perpustakaan.editBuku();
+        } else if (n == 4) {
+            perpustakaan.pinjamBuku();
+        } else if (n == 5) {
+            perpustakaan.kembalikanBuku();
+        } else if (n == 6) {
+            perpustakaan.tampilkanBuku();
+        } else if (n == 7) {
+            perpustakaan.keluar();
+            return 0;
+        } else {
+            cout << "Pilihan Anda tidak valid, mohon coba lagi.\n";
         }
+        
+        // switch (n) {
+        //     case 1:
+        //         perpustakaan.tambahBuku();
+        //         break;
+        //     case 2:
+        //         perpustakaan.cariBuku();
+        //         break;
+        //     case 3:
+        //         perpustakaan.editBuku();
+        //         break;
+        //     case 4:
+        //         perpustakaan.pinjamBuku();
+        //         break;
+        //     case 5:
+        //         perpustakaan.kembalikanBuku();
+        //         break;
+        //     case 6:
+        //         perpustakaan.tampilkanBuku();
+        //         break;
+        //     case 7:
+        //         perpustakaan.keluar();
+        //         return 0;
+        //     default:
+        //         cout << "Pilihan Anda tidak valid, Silakan coba lagi.\n";
+        // }
     }
 
 return 0;
