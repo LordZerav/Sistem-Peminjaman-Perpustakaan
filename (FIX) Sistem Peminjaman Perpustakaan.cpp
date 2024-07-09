@@ -291,7 +291,6 @@ int main() {
         } else if (n == 6) {
             system("cls");
             perpustakaan.tampilkanBuku();
-            return 0;
 
         } else if (n == 7) {
             system("cls");
