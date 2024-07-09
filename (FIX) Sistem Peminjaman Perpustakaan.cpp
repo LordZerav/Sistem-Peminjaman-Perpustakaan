@@ -233,7 +233,10 @@ public:
     // Keluar dari program
     void keluar() {
         cout << "\n";
-        cout << "Terima kasih telah menggunakan layanan perpustakaan.\n";
+        cout << "===========================================================================\n";
+        cout << "|          Terima Kasih Telah Menggunakan Layanan Perpustakaan Kami       |\n";
+        cout << "===========================================================================\n";
+        cout << "\n";
     }
 };
 
@@ -288,6 +291,7 @@ int main() {
         } else if (n == 6) {
             system("cls");
             perpustakaan.tampilkanBuku();
+            return 0;
 
         } else if (n == 7) {
             system("cls");
