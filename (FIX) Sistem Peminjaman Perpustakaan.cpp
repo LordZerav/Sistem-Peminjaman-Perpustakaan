@@ -278,14 +278,17 @@ int main() {
 
         } else if (n == 3) {
             system("cls");
+            perpustakaan.tampilkanBuku();
             perpustakaan.editBuku();
 
         } else if (n == 4) {
             system("cls");
+            perpustakaan.tampilkanBuku();
             perpustakaan.pinjamBuku();
 
         } else if (n == 5) {
             system("cls");
+            perpustakaan.tampilkanBuku();
             perpustakaan.kembalikanBuku();
 
         } else if (n == 6) {
